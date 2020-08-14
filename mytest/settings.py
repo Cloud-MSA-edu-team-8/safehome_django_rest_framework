@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+# import pymysql
+#
+# pymysql.install_as_MySQLdb()
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'safehome'
 ]
 
 MIDDLEWARE = [
@@ -81,9 +86,9 @@ DATABASES = {
 
     'default': {
          'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'test_django_db', # DB명
-         'USER': 'root', # 데이터베이스 계정
-         'PASSWORD':'root', # 계정 비밀번호
+         'NAME': 'safehome_db', # DB명
+         'USER': 'zzid', # 데이터베이스 계정
+         'PASSWORD':'zzid', # 계정 비밀번호
          'HOST':'192.168.0.30', # 데이테베이스 IP # 유진 컴퓨터 ip
          'PORT':'3306', # 데이터베이스 port
     }

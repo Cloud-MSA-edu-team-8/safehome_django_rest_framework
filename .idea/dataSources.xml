@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\i\Desktop\test_django\db.sqlite3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="zz@localhost" uuid="ecd65654-032e-4fe5-a013-a287bad2f779">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306</jdbc-url>
+    </data-source>
   </component>
 </project>
