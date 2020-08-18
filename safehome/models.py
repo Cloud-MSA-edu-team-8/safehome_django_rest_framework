@@ -62,3 +62,58 @@ class House(models.Model):
 
     def __str__(self):
         return self.area
+class Children(models.Model):
+    # 자치구 이름
+    area = models.CharField(max_length=30,default='')
+
+    # 어린이 교통사고 발생건수
+    accident_num = models.IntegerField(default=0)
+    # 어린이 교통사고 발생비율
+    accident_rate = models.FloatField(default=0)
+    # 어린이보호구역내 어린이 교통사고 발생건수
+    safe_num = models.IntegerField(default=0)
+
+    # 어린이보호구역내 어린이 교통사고 발생비율
+    safe_rate = models.FloatField(default=0)
+    # 시군구코드
+    code = models.IntegerField(primary_key=True)
+
+    def __str__(self):
+        return self.area  # 자치구 이름으로 admin에 보이도록한다
+class Alchohol(models.Model):
+
+    # 자치구 이름
+    area = models.CharField(max_length=30,default='')
+
+    # 음주운전 교통사고 발생건수
+    accident_num = models.IntegerField(default=0)
+    # 사망자수
+    dead_num = models.IntegerField(default=0)
+    # 부상자수
+    casual_num = models.IntegerField(default=0)
+    # 음주운전 사고 발생 비율
+    acc_rate = models.FloatField(default=0)
+    # 부상자 비율
+    casual_rate = models.FloatField(default=0)
+
+    # 시군구코드
+    code = models.IntegerField(primary_key=True)
+
+    def __str__(self):
+        return self.area  # 자치구 이름으로 admin에 보이도록한다
+class Fire_damage(models.Model):
+
+    # 자치구 이름
+    area = models.CharField(max_length=30,default='')
+
+    # 재산피해소계
+    fire_damage = models.IntegerField(default=0)
+
+
+    # 시군구코드
+    code = models.IntegerField(primary_key=True)
+
+    def __str__(self):
+        return self.area  # 자치구 이름으로 admin에 보이도록한다
+
+
