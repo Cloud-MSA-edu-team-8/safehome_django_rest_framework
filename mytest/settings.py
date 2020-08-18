@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'safehome'
+    'safehome',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,7 @@ DATABASES = {
 
     'default': {
          'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'safehome_db', # DB명
+         'NAME': 'safe_home_db', # DB명
          'USER': 'zzid', # 데이터베이스 계정
          'PASSWORD':'zzid', # 계정 비밀번호
          'HOST':'192.168.0.30', # 데이테베이스 IP # 유진 컴퓨터 ip
@@ -133,3 +134,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
