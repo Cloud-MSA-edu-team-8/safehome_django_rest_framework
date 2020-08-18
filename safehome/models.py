@@ -34,19 +34,31 @@ class Crime(models.Model):
     def __str__(self):
         return self.area  # 자치구 이름으로 admin에 보이도록한다
 
-# class Flood(models.Model):
-#     # 자치구
-#     area = models.CharField(max_length=30, primary_key=True)
-#     # 이재민
-#     people = models.IntegerField(default=0)
-#     # 주택침수세대
-#     houses = models.IntegerField(default=0)
-#     # 건물
-#     buildings = models.IntegerField(default=0)
-#     # 공공시설
-#     public = models.IntegerField(default=0)
-#     # 피해액합계
-#     total = models.IntegerField(default=0)
-#
-#     def __str__(self):
-#         return self.area  # 자치구 이름으로 admin에 보이도록한다
+class Flood(models.Model):
+    id = models.IntegerField(primary_key=True, default='')
+    # 자치구
+    area = models.CharField(max_length=30)
+    # 이재민
+    people = models.IntegerField(default=0)
+    # 주택침수세대
+    houses = models.IntegerField(default=0)
+    # 건물
+    buildings = models.IntegerField(default=0)
+    # 공공시설
+    public = models.IntegerField(default=0)
+    # 피해액합계
+    total_cost = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.area  # 자치구 이름으로 admin에 보이도록한다
+
+class House(models.Model):
+    # 시군구코드
+    code = models.IntegerField(primary_key=True, default='')
+    # 자치구
+    area = models.CharField(max_length=30)
+    # 평당가
+    price = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.area
