@@ -168,3 +168,25 @@ class Total(models.Model):
     alc_car_num = models.IntegerField(default=0)
     # 평당가
     house_price = models.IntegerField(default=0)
+
+class Total_rate(models.Model):
+    # 시군구코드
+    id = models.IntegerField(primary_key=True, default='')
+    # 자치구
+    area = models.CharField(max_length=30)
+    # 인구수
+    population = models.IntegerField(default=0)
+    # 이재민
+    flood_vic = models.IntegerField(default=0)
+    # 4대범죄 발생건수
+    crime_num = models.IntegerField(default=0)
+    # 검거율
+    crime_arr = models.IntegerField(default=0)
+    # 화재피해액
+    fire_cost = models.IntegerField(default=0)
+    # 어린이 교통사고 수
+    child_car_num = models.IntegerField(default=0)
+    # 음주운전 건수
+    alc_car_num = models.IntegerField(default=0)
+    # 평당가
+    house_price = models.IntegerField(default=0)
