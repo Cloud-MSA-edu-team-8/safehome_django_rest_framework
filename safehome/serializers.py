@@ -105,3 +105,4 @@ class TotalSerializer(serializers.ModelSerializer):
             'alc_car_num',
             'house_price'
         )
+        model = Total
