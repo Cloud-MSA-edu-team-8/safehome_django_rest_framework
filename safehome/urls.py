@@ -22,5 +22,8 @@ urlpatterns = [
     path('house/<int:pk>/', views.DetailHouse.as_view()),
 
     path('population/', views.ListPopulation.as_view()),
-    path('population/<int:pk>/', views.DetailPopulation.as_view())
+    path('population/<int:pk>/', views.DetailPopulation.as_view()),
+
+    path('total/', views.ListTotal.as_view()),
+    path('total/<int:pk>/', views.DetailTotal.as_view())
 ]
