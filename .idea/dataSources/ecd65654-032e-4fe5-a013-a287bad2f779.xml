@@ -1087,8 +1087,12 @@ ALL PRIVILEGES|safehome_db:null
     <table id="349" parent="5" name="safehome_fire_damage">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="350" parent="5" name="safehome_flood"/>
-    <table id="351" parent="5" name="safehome_house"/>
+    <table id="350" parent="5" name="safehome_flood">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="351" parent="5" name="safehome_house">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <table id="352" parent="5" name="safehome_population">
       <Collation>utf8_general_ci</Collation>
     </table>
