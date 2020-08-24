@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Children, Crime, Fire_damage, Flood, Alcohol, House, Population, Total, Total_rate, Colour
+from .models import Children, Crime, Fire_damage, Flood, Alcohol, House, Population, Total, Total_rate, Svgd
 
 admin.site.register(Children)
 admin.site.register(Crime)
@@ -10,6 +10,6 @@ admin.site.register(House)
 admin.site.register(Population)
 admin.site.register(Total)
 admin.site.register(Total_rate)
-admin.site.register(Colour)
+admin.site.register(Svgd)
 
 # Register your models here.

@@ -197,8 +197,10 @@ class Total_rate(models.Model):
     def __str__(self):
         return self.area
 
-class Colour(models.Model):
+class Svgd(models.Model):
     # 시군구코드
     id = models.IntegerField(primary_key=True, default='')
     # 색상
     colour = models.CharField(max_length=30)
+    # 좌표
+    location = models.CharField(max_length=1000)

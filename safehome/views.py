@@ -3,9 +3,9 @@ from django.shortcuts import render
 from django.shortcuts import render
 from rest_framework import generics
 
-from .models import Alcohol, Children, Crime, Fire_damage, Flood, House, Population, Total, Total_rate, Colour
+from .models import Alcohol, Children, Crime, Fire_damage, Flood, House, Population, Total, Total_rate, Svgd
 from .serializers import AlcoholSerializer, ChildrenSerializer, CrimeSerializer, FireDamageSerializer, FloodSerializer,\
-    HouseSerializer, PopulationSerializer, TotalSerializer, TotalRateSerializer, ColourSerializer
+    HouseSerializer, PopulationSerializer, TotalSerializer, TotalRateSerializer, SvgdSerializer
 
 # alcohol
 class ListAlcohol(generics.ListCreateAPIView):
@@ -88,11 +88,11 @@ class DetailTotalRate(generics.RetrieveUpdateDestroyAPIView):
     queryset = Total_rate.objects.all()
     serializer_class = TotalRateSerializer
 
-# colour
-class ListColour(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Colour.objects.all()
-    serializer_class = ColourSerializer
+# svgd
+class ListSvgd(generics.ListCreateAPIView):
+    queryset = Svgd.objects.all()
+    serializer_class = SvgdSerializer
 
-class DetailColour(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Colour.objects.all()
-    serializer_class = ColourSerializer
+class DetailSvgd(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Svgd.objects.all()
+    serializer_class = SvgdSerializer

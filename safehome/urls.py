@@ -30,6 +30,6 @@ urlpatterns = [
     path('rate/', views.ListTotalRate.as_view()),
     path('rate/<int:pk>/', views.DetailTotalRate.as_view()),
 
-    path('colour/', views.ListColour.as_view()),
-    path('colour/<int:pk>/', views.DetailColour.as_view())
+    path('svgd/', views.ListSvgd.as_view()),
+    path('svgd/<int:pk>/', views.DetailSvgd.as_view())
 ]
