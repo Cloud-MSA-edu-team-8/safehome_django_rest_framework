@@ -202,5 +202,11 @@ class Svgd(models.Model):
     id = models.IntegerField(primary_key=True, default='')
     # 색상
     colour = models.CharField(max_length=30)
+<<<<<<< HEAD
     # 좌표
     location = models.CharField(max_length=1000)
+=======
+
+
+# class HomeUser()
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40

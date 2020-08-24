@@ -88,10 +88,17 @@ class DetailTotalRate(generics.RetrieveUpdateDestroyAPIView):
     queryset = Total_rate.objects.all()
     serializer_class = TotalRateSerializer
 
+<<<<<<< HEAD
 # svgd
 class ListSvgd(generics.ListCreateAPIView):
     queryset = Svgd.objects.all()
     serializer_class = SvgdSerializer
+=======
+# colour
+class ListColour(generics.ListCreateAPIView):
+    queryset = Colour.objects.all()
+    serializer_class = ColourSerializer
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
 
 class DetailSvgd(generics.RetrieveUpdateDestroyAPIView):
     queryset = Svgd.objects.all()

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'safehome',
     'rest_framework',
     'corsheaders',  # 추가
+    'knox', # 추가
 ]
 
 MIDDLEWARE = [
@@ -143,5 +144,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, STATIC_URL)
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
-    ]
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',), # 추가
 }

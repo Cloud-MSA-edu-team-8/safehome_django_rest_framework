@@ -1080,23 +1080,30 @@ ALL PRIVILEGES|safehome_db:null
       <Collation>utf8_general_ci</Collation>
     </table>
     <table id="348" parent="5" name="safehome_children">
+<<<<<<< HEAD
+=======
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="349" parent="5" name="safehome_crime">
+    <table id="349" parent="5" name="safehome_colour">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="350" parent="5" name="safehome_fire_damage">
+    <table id="350" parent="5" name="safehome_crime">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="351" parent="5" name="safehome_flood">
+    <table id="351" parent="5" name="safehome_fire_damage">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="352" parent="5" name="safehome_house">
+    <table id="352" parent="5" name="safehome_flood">
       <Collation>utf8_general_ci</Collation>
     </table>
-    <table id="353" parent="5" name="safehome_population">
+    <table id="353" parent="5" name="safehome_house">
       <Collation>utf8_general_ci</Collation>
     </table>
+    <table id="354" parent="5" name="safehome_population">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+<<<<<<< HEAD
     <table id="354" parent="5" name="safehome_svgd">
       <Collation>utf8_general_ci</Collation>
     </table>
@@ -1106,6 +1113,14 @@ ALL PRIVILEGES|safehome_db:null
     <table id="356" parent="5" name="safehome_total_rate">
       <Collation>utf8_general_ci</Collation>
     </table>
+=======
+    <table id="355" parent="5" name="safehome_total">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="356" parent="5" name="safehome_total_rate">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
     <column id="357" parent="336" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
@@ -1659,200 +1674,371 @@ model</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="468" parent="349" name="id">
+<<<<<<< HEAD
+=======
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="469" parent="349" name="area">
+    <column id="469" parent="349" name="colour">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="470" parent="349" name="murder">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="471" parent="349" name="robber">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="472" parent="349" name="rape">
-      <Position>5</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="473" parent="349" name="theft">
-      <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="474" parent="349" name="violence">
-      <Position>7</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="475" parent="349" name="total">
-      <Position>8</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="476" parent="349" name="arr_total">
-      <Position>9</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="477" parent="349" name="arrest">
-      <Position>10</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <key id="478" parent="349" name="PRIMARY">
+    <key id="470" parent="349" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="479" parent="350" name="area">
+    <column id="471" parent="350" name="id">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>1</Position>
-      <DataType>varchar(30)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="480" parent="350" name="fire_damage">
-      <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="481" parent="350" name="code">
+<<<<<<< HEAD
+    <column id="469" parent="349" name="area">
+=======
+    <column id="472" parent="350" name="area">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="470" parent="349" name="murder">
+=======
+    <column id="473" parent="350" name="murder">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
+    <column id="471" parent="349" name="robber">
+=======
+    <column id="474" parent="350" name="robber">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="472" parent="349" name="rape">
+=======
+    <column id="475" parent="350" name="rape">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="473" parent="349" name="theft">
+=======
+    <column id="476" parent="350" name="theft">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="474" parent="349" name="violence">
+=======
+    <column id="477" parent="350" name="violence">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="475" parent="349" name="total">
+=======
+    <column id="478" parent="350" name="total">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="476" parent="349" name="arr_total">
+=======
+    <column id="479" parent="350" name="arr_total">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="477" parent="349" name="arrest">
+=======
+    <column id="480" parent="350" name="arrest">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>10</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <key id="478" parent="349" name="PRIMARY">
+=======
+    <key id="481" parent="350" name="PRIMARY">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+<<<<<<< HEAD
+    <column id="479" parent="350" name="area">
+=======
+    <column id="482" parent="351" name="area">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>1</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="480" parent="350" name="fire_damage">
+=======
+    <column id="483" parent="351" name="fire_damage">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
+    <column id="481" parent="350" name="code">
+=======
+    <column id="484" parent="351" name="code">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+<<<<<<< HEAD
     <key id="482" parent="350" name="PRIMARY">
+=======
+    <key id="485" parent="351" name="PRIMARY">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <NameSurrogate>1</NameSurrogate>
       <ColNames>code</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <column id="483" parent="351" name="id">
+=======
+    <column id="486" parent="352" name="id">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="484" parent="351" name="area">
+=======
+    <column id="487" parent="352" name="area">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="485" parent="351" name="people">
+=======
+    <column id="488" parent="352" name="people">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="486" parent="351" name="houses">
+=======
+    <column id="489" parent="352" name="houses">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="487" parent="351" name="buildings">
+=======
+    <column id="490" parent="352" name="buildings">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="488" parent="351" name="public">
+=======
+    <column id="491" parent="352" name="public">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="489" parent="351" name="total_cost">
+=======
+    <column id="492" parent="352" name="total_cost">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <key id="490" parent="351" name="PRIMARY">
+=======
+    <key id="493" parent="352" name="PRIMARY">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <column id="491" parent="352" name="id">
+=======
+    <column id="494" parent="353" name="id">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="492" parent="352" name="area">
+=======
+    <column id="495" parent="353" name="area">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="493" parent="352" name="price">
+=======
+    <column id="496" parent="353" name="price">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <key id="494" parent="352" name="PRIMARY">
+=======
+    <key id="497" parent="353" name="PRIMARY">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <column id="495" parent="353" name="id">
+=======
+    <column id="498" parent="354" name="id">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="496" parent="353" name="area">
+=======
+    <column id="499" parent="354" name="area">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="497" parent="353" name="household">
+=======
+    <column id="500" parent="354" name="household">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="498" parent="353" name="total_male">
+=======
+    <column id="501" parent="354" name="total_male">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="499" parent="353" name="total_female">
+=======
+    <column id="502" parent="354" name="total_female">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="500" parent="353" name="total_total">
+=======
+    <column id="503" parent="354" name="total_total">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="501" parent="353" name="kor_male">
+=======
+    <column id="504" parent="354" name="kor_male">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="502" parent="353" name="kor_female">
+=======
+    <column id="505" parent="354" name="kor_female">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="503" parent="353" name="kor_total">
+=======
+    <column id="506" parent="354" name="kor_total">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="504" parent="353" name="for_male">
+=======
+    <column id="507" parent="354" name="for_male">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="505" parent="353" name="for_female">
+=======
+    <column id="508" parent="354" name="for_female">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>11</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="506" parent="353" name="for_total">
+=======
+    <column id="509" parent="354" name="for_total">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>12</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <key id="507" parent="353" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
@@ -1874,116 +2060,207 @@ model</ColNames>
       <NotNull>1</NotNull>
     </column>
     <key id="511" parent="354" name="PRIMARY">
+=======
+    <key id="510" parent="354" name="PRIMARY">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <column id="512" parent="355" name="id">
+=======
+    <column id="511" parent="355" name="id">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="513" parent="355" name="area">
+=======
+    <column id="512" parent="355" name="area">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="514" parent="355" name="population">
+=======
+    <column id="513" parent="355" name="population">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="515" parent="355" name="flood_vic">
+=======
+    <column id="514" parent="355" name="flood_vic">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="516" parent="355" name="crime_num">
+=======
+    <column id="515" parent="355" name="crime_num">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="517" parent="355" name="crime_arr">
+=======
+    <column id="516" parent="355" name="crime_arr">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="518" parent="355" name="fire_cost">
+=======
+    <column id="517" parent="355" name="fire_cost">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="519" parent="355" name="child_car_num">
+=======
+    <column id="518" parent="355" name="child_car_num">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="520" parent="355" name="alc_car_num">
+=======
+    <column id="519" parent="355" name="alc_car_num">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="521" parent="355" name="house_price">
+=======
+    <column id="520" parent="355" name="house_price">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <key id="522" parent="355" name="PRIMARY">
+=======
+    <key id="521" parent="355" name="PRIMARY">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <column id="523" parent="356" name="id">
+=======
+    <column id="522" parent="356" name="id">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="524" parent="356" name="area">
+=======
+    <column id="523" parent="356" name="area">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="525" parent="356" name="population">
+=======
+    <column id="524" parent="356" name="population">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="526" parent="356" name="flood_vic">
+=======
+    <column id="525" parent="356" name="flood_vic">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="527" parent="356" name="crime_num">
+=======
+    <column id="526" parent="356" name="crime_num">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="528" parent="356" name="crime_arr">
+=======
+    <column id="527" parent="356" name="crime_arr">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="529" parent="356" name="fire_cost">
+=======
+    <column id="528" parent="356" name="fire_cost">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="530" parent="356" name="child_car_num">
+=======
+    <column id="529" parent="356" name="child_car_num">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="531" parent="356" name="alc_car_num">
+=======
+    <column id="530" parent="356" name="alc_car_num">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="532" parent="356" name="house_price">
+=======
+    <column id="531" parent="356" name="house_price">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <key id="533" parent="356" name="PRIMARY">
+=======
+    <key id="532" parent="356" name="PRIMARY">
+>>>>>>> e87e40138fbdaadc8e6543ee795428f029590f40
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
