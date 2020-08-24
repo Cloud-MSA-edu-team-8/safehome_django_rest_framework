@@ -84,19 +84,19 @@ WSGI_APPLICATION = 'mytest.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
-
     'default': {
-         'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'safe_home_db', # DB명
-         'USER': 'zzid', # 데이터베이스 계정
-         'PASSWORD':'zzid', # 계정 비밀번호
-         'HOST':'192.168.0.30', # 데이테베이스 IP # 유진 컴퓨터 ip
-         'PORT':'3306', # 데이터베이스 port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+
+    # 'default': {
+    #      'ENGINE': 'django.db.backends.mysql',
+    #      'NAME': 'safe_home_db', # DB명
+    #      'USER': 'zzid', # 데이터베이스 계정
+    #      'PASSWORD':'zzid', # 계정 비밀번호
+    #      'HOST':'192.168.0.30', # 데이테베이스 IP # 유진 컴퓨터 ip
+    #      'PORT':'3306', # 데이터베이스 port
+    # }
 }
 
 

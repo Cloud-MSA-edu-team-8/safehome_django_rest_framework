@@ -205,5 +205,6 @@ class Svgd(models.Model):
     # 좌표
     location = models.CharField(max_length=1000)
 
+    def __str__(self):
+        return self.id
 
-# class HomeUser()

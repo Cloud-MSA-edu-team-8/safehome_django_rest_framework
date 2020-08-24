@@ -13,5 +13,11 @@
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mariadb://192.168.0.30:3306</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="db [2]" uuid="6f7d435b-6f91-4497-85af-6e43fb8da640">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\i\Desktop\safehome_django_rest_framework\db.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>
