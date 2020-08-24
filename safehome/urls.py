@@ -28,5 +28,8 @@ urlpatterns = [
     path('total/<int:pk>/', views.DetailTotal.as_view()),
 
     path('rate/', views.ListTotalRate.as_view()),
-    path('rate/<int:pk>/', views.DetailTotalRate.as_view())
+    path('rate/<int:pk>/', views.DetailTotalRate.as_view()),
+
+    path('colour/', views.ListColour.as_view()),
+    path('colour/<int:pk>/', views.DetailColour.as_view())
 ]

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Alcohol, Children, Crime, Fire_damage, Flood, House, Population, Total, Total_rate
+from .models import Alcohol, Children, Crime, Fire_damage, Flood, House, Population, Total, Total_rate, Colour
 
 class AlcoholSerializer(serializers.ModelSerializer):
     class Meta:
@@ -122,3 +122,11 @@ class TotalRateSerializer(serializers.ModelSerializer):
             'house_price'
         )
         model = Total_rate
+
+class ColourSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = (
+            'id',
+            'colour'
+        )
+        model = Colour

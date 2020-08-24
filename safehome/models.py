@@ -169,6 +169,9 @@ class Total(models.Model):
     # 평당가
     house_price = models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.area
+
 class Total_rate(models.Model):
     # 시군구코드
     id = models.IntegerField(primary_key=True, default='')
@@ -190,3 +193,12 @@ class Total_rate(models.Model):
     alc_car_num = models.IntegerField(default=0)
     # 평당가
     house_price = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.area
+
+class Colour(models.Model):
+    # 시군구코드
+    id = models.IntegerField(primary_key=True, default='')
+    # 색상
+    colour = models.CharField(max_length=30)
