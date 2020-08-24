@@ -89,7 +89,7 @@ class DetailTotalRate(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = TotalRateSerializer
 
 # colour
-class ListColour(generics.RetrieveUpdateDestroyAPIView):
+class ListColour(generics.ListCreateAPIView):
     queryset = Colour.objects.all()
     serializer_class = ColourSerializer
 

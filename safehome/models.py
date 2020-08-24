@@ -202,3 +202,6 @@ class Colour(models.Model):
     id = models.IntegerField(primary_key=True, default='')
     # 색상
     colour = models.CharField(max_length=30)
+
+
+# class HomeUser()
