@@ -4,14 +4,15 @@ import json
 import os
 from urllib.parse import urljoin
 import django
-from safehome.models import NewsData
+
 
 # 실행될 때 DJANGO_SETTINGS_MODULE이라는 환경 변수에 현재 프로젝트의 settings.py파일 경로를 등록
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "websaver.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mytest.settings")
 
 # 장고를 가져와 장고 프로젝트를 사용할 수 있는 환경을 만들기
 django.setup()
 
+from newscrawl.models import NewsData
 
 
 def parse_news():
@@ -37,4 +38,7 @@ def parse_news():
     return data
 
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
+    news_data_dict = parse_news()
+    for t, l in news_data_dict.items():
+        NewsData(title=t, link=l).save()

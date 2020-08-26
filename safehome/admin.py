@@ -12,4 +12,6 @@ admin.site.register(Total)
 admin.site.register(Total_rate)
 admin.site.register(Svgd)
 
+
+
 # Register your models here.

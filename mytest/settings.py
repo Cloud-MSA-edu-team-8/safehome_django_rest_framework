@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'safehome',
     'rest_framework',
     'corsheaders',  # 추가
-    'knox', # 추가
+    'newscrawl', 
+    'knox',
 ]
 
 MIDDLEWARE = [
