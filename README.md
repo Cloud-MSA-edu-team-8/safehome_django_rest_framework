@@ -8,7 +8,8 @@ Backend : django rest framework(DRF)
 
 <pre>
 [V] Database change -> sqllite3
-[ ] Database Normalization
-[ ] news web crawling , serializing (for react)
+[V] Database Normalization
+[V] news web crawling , serializing (for react)
 [ ] login/logout (??)
+[ ] Choosing a news keyword
 </pre>
