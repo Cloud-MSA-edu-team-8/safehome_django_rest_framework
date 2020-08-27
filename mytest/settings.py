@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',  # 추가
     'knox', # 추가
+    'newscrawl',
 ]
 
 MIDDLEWARE = [
