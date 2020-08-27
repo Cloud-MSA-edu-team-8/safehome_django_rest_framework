@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Children, Crime, Fire_damage, Flood, Alcohol, House, Population, Total, Total_rate, Svgd
+from .models import Area, Children, Crime, Fire_damage, Flood, Alcohol, House, Population, Total, Total_rate, Svgd
 
+admin.site.register(Area)
 admin.site.register(Children)
 admin.site.register(Crime)
 admin.site.register(Fire_damage)
