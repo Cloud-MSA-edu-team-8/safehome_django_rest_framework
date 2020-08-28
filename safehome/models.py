@@ -197,7 +197,7 @@ class Total_rate(models.Model):
 
 class Svgd(models.Model):
     # 시군구코드
-    code = models.CharField(primary_key=True, max_length=30, default='')
+    code = models.CharField(primary_key=True, max_length=100, default='')
     # 색상
     colour = models.CharField(max_length=30)
     # 좌표
