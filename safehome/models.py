@@ -199,7 +199,7 @@ class Svgd(models.Model):
     # 시군구코드
     code = models.CharField(primary_key=True, max_length=100, default='')
     # 색상
-    colour = models.CharField(max_length=30)
+    colour = models.CharField(max_length=100)
     # 좌표
     location = models.CharField(max_length=1000)
 
