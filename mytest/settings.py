@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
+
 # import pymysql
 #
 # pymysql.install_as_MySQLdb()
@@ -148,3 +150,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',), # 추가
 }
+
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
