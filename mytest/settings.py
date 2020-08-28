@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import django_heroku
+import dotenv
+import dj_database_url
 
 # import pymysql
 #
@@ -20,7 +22,9 @@ import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+dotenv_file = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(dotenv_file):
+    dotenv.load_dotenv(dotenv_file)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -87,23 +91,24 @@ WSGI_APPLICATION = 'mytest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'CONN_MAX_AGE': 500
-    }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'CONN_MAX_AGE': 500
+#     }
 
-    # 'default': {
-    #      'ENGINE': 'django.db.backends.mysql',
-    #      'NAME': 'safe_home_db', # DB명
-    #      'USER': 'zzid', # 데이터베이스 계정
-    #      'PASSWORD':'zzid', # 계정 비밀번호
-    #      'HOST':'192.168.0.30', # 데이테베이스 IP # 유진 컴퓨터 ip
-    #      'PORT':'3306', # 데이터베이스 port
-    # }
-}
-
+#     # 'default': {
+#     #      'ENGINE': 'django.db.backends.mysql',
+#     #      'NAME': 'safe_home_db', # DB명
+#     #      'USER': 'zzid', # 데이터베이스 계정
+#     #      'PASSWORD':'zzid', # 계정 비밀번호
+#     #      'HOST':'192.168.0.30', # 데이테베이스 IP # 유진 컴퓨터 ip
+#     #      'PORT':'3306', # 데이터베이스 port
+#     # }
+# }
+DATABASES = {} 
+DATABASES [ 'default'] = dj_database_url.config (conn_max_age = 600)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -162,10 +167,13 @@ REST_FRAMEWORK = {
 }
 
 
-import dj_database_url
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+options = DATABASES['default'].get('OPTIONS', {})
+options.pop('sslmode', None)
