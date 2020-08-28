@@ -12,4 +12,7 @@ Backend : django rest framework(DRF)
 [V] news web crawling , serializing (for react)
 [ ] login/logout (??)
 [ ] Choosing a news keyword
+[V] Distributing the app to Heroku
+[ ] Heroku db connection problem?
+[ ] News DB auto update
 </pre>
