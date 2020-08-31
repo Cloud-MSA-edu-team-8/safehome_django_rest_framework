@@ -17,7 +17,7 @@ class Area(models.Model):
 
 class Alcohol(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 음주운전 교통사고 발생건수
     accident_num = models.IntegerField(default=0)
     # 사망자수
@@ -34,7 +34,7 @@ class Alcohol(models.Model):
 
 class Children(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 어린이 교통사고 발생건수
     accident_num = models.IntegerField(default=0)
     # 어린이 교통사고 발생비율
@@ -49,7 +49,7 @@ class Children(models.Model):
 
 class Crime(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 살인
     murder = models.IntegerField()
     # 강도
@@ -74,7 +74,7 @@ class Crime(models.Model):
 
 class Fire_damage(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 재산피해소계
     fire_damage = models.IntegerField(default=0)
 
@@ -84,7 +84,7 @@ class Fire_damage(models.Model):
 
 class Flood(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 이재민
     people = models.IntegerField(default=0)
     # 주택침수세대
@@ -101,7 +101,7 @@ class Flood(models.Model):
 
 class House(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 평당가
     price = models.IntegerField(default=0)
 
@@ -110,7 +110,7 @@ class House(models.Model):
 
 class Population(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 세대수
     household = models.IntegerField(default=0)
     # 남자 total
@@ -137,7 +137,7 @@ class Population(models.Model):
 
 class Total(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE , primary_key = True)
     # 인구수
     population = models.IntegerField(default=0)
     # 이재민
@@ -160,7 +160,7 @@ class Total(models.Model):
 
 class Total_rate(models.Model):
     # 자치구 이름
-    areas = models.ForeignKey(Area, on_delete=models.CASCADE)
+    areas = models.ForeignKey(Area, on_delete=models.CASCADE, primary_key = True)
     # 인구비
     population_rate = models.IntegerField(default=0)
     # 인구수
@@ -197,7 +197,7 @@ class Total_rate(models.Model):
 
 class Svgd(models.Model):
     # 시군구코드
-    code = models.CharField(primary_key=True, max_length=100, default='')
+    code = models.CharField(max_length=100, default='', primary_key = True)
     # 색상
     colour = models.CharField(max_length=1000)
     # 좌표
