@@ -3,8 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-   path('area/', views.ListArea.as_view()),
-   path('area/<str:pk>/', views.DetailArea.as_view()),
+   path('region/', views.ListRegion.as_view()),
+   path('region/<str:pk>/', views.DetailRegion.as_view()),
 
    path('alcohol/', views.ListAlcohol.as_view()),
    path('alcohol/<str:pk>/', views.DetailAlcohol.as_view()),
@@ -33,6 +33,6 @@ urlpatterns = [
    path('rate/', views.ListTotalRate.as_view()),
    path('rate/<str:pk>/', views.DetailTotalRate.as_view()),
 
-   path('svgd/', views.ListSvgd.as_view()),
-   path('svgd/<str:pk>/', views.DetailSvgd.as_view())
+   path('draw_data/', views.ListDrawdata.as_view()),
+   path('draw_data/<str:pk>/', views.DetailDrawdata.as_view())
 ]

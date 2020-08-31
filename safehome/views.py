@@ -3,18 +3,19 @@ from django.shortcuts import render
 from django.shortcuts import render
 from rest_framework import generics
 
-from .models import Area, Alcohol, Children, Crime, Fire_damage, Flood, House, Population, Total, Total_rate, Svgd
-from .serializers import AreaSerializer, AlcoholSerializer, ChildrenSerializer, CrimeSerializer, FireDamageSerializer,\
-    FloodSerializer, HouseSerializer, PopulationSerializer, TotalSerializer, TotalRateSerializer, SvgdSerializer
+from .models import Region, Alcohol, Children, Crime, Fire_damage, Flood, House, Population,\
+    Total, Total_rate, Draw_data
+from .serializers import RegionSerializer, AlcoholSerializer, ChildrenSerializer, CrimeSerializer, FireDamageSerializer,\
+    FloodSerializer, HouseSerializer, PopulationSerializer, TotalSerializer, TotalRateSerializer, DrawdataSerializer
 
 # alcohol
-class ListArea(generics.ListCreateAPIView):
-    queryset = Area.objects.all()
-    serializer_class = AreaSerializer
+class ListRegion(generics.ListCreateAPIView):
+    queryset = Region.objects.all()
+    serializer_class = RegionSerializer
 
-class DetailArea(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Area.objects.all()
-    serializer_class = AreaSerializer
+class DetailRegion(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Region.objects.all()
+    serializer_class = RegionSerializer
 
 # alcohol
 class ListAlcohol(generics.ListCreateAPIView):
@@ -98,10 +99,10 @@ class DetailTotalRate(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = TotalRateSerializer
 
 # svgd
-class ListSvgd(generics.ListCreateAPIView):
-    queryset = Svgd.objects.all()
-    serializer_class = SvgdSerializer
+class ListDrawdata(generics.ListCreateAPIView):
+    queryset = Draw_data.objects.all()
+    serializer_class = DrawdataSerializer
 
-class DetailSvgd(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Svgd.objects.all()
-    serializer_class = SvgdSerializer
+class DetailDrawdata(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Draw_data.objects.all()
+    serializer_class = DrawdataSerializer

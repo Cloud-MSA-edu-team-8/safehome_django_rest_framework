@@ -1,41 +1,42 @@
 from rest_framework import serializers
-from .models import Area, Alcohol, Children, Crime, Fire_damage, Flood, House, Population, Total, Total_rate, Svgd
+from .models import Region, Alcohol, Children, Crime, Fire_damage, Flood, House, Population,\
+    Total, Total_rate, Draw_data
 
-class AreaSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'code',
+class RegionSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = (
+           'region_code',
            'areas',
        )
-       model = Area
+        model = Region
 
 class AlcoholSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'accident_num',
            'dead_num',
            'casual_num',
            'acc_rate',
            'casual_rate',
        )
-       model = Alcohol
+        model = Alcohol
 
 class ChildrenSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'accident_num',
            'accident_rate',
            'safe_num',
            'safe_rate',
        )
-       model = Children
+        model = Children
 
 class CrimeSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'murder',
            'robber',
            'rape',
@@ -45,40 +46,40 @@ class CrimeSerializer(serializers.ModelSerializer):
            'arr_total',
            'arrest',
        )
-       model = Crime
+        model = Crime
 
 class FireDamageSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'fire_damage',
        )
-       model = Fire_damage
+        model = Fire_damage
 
 class FloodSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'area',
+    class Meta:
+        fields = (
+           'region_code',
            'people',
            'houses',
            'buildings',
            'public',
            'total_cost',
        )
-       model = Flood
+        model = Flood
 
 class HouseSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'price',
        )
-       model = House
+        model = House
 
 class PopulationSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'household',
            'total_male',
            'total_female',
@@ -90,12 +91,12 @@ class PopulationSerializer(serializers.ModelSerializer):
            'for_female',
            'for_total',
        )
-       model = Population
+        model = Population
 
 class TotalSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'population',
            'flood_vic',
            'crime_num',
@@ -105,12 +106,12 @@ class TotalSerializer(serializers.ModelSerializer):
            'alc_car_num',
            'house_price',
        )
-       model = Total
+        model = Total
 
 class TotalRateSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'areas',
+    class Meta:
+        fields = (
+           'region_code',
            'population_rate',
            'population',
            'flood_vic_rate',
@@ -127,13 +128,13 @@ class TotalRateSerializer(serializers.ModelSerializer):
            'house_price_rate',
            'house_price',
        )
-       model = Total_rate
+        model = Total_rate
 
-class SvgdSerializer(serializers.ModelSerializer):
-   class Meta:
-       fields = (
-           'code',
-           'colour',
-           'location'
+class DrawdataSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = (
+           'region_code',
+           'district_color',
+           'svgd'
        )
-       model = Svgd
+        model = Draw_data
