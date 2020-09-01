@@ -20,6 +20,7 @@ import dj_database_url
 # pymysql.install_as_MySQLdb()
 
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 수정
@@ -93,12 +94,19 @@ WSGI_APPLICATION = 'mytest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         'CONN_MAX_AGE': 500
-#     }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'CONN_MAX_AGE': 500,
+        'USER': 'zzid',
+        'PASSWORD': 'zzid',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+DEBUG = True
 
 #     # 'default': {
 #     #      'ENGINE': 'django.db.backends.mysql',
@@ -109,8 +117,11 @@ WSGI_APPLICATION = 'mytest.wsgi.application'
 #     #      'PORT':'3306', # 데이터베이스 port
 #     # }
 # }
-DATABASES = {} 
-DATABASES [ 'default'] = dj_database_url.config (conn_max_age = 600)
+# DATABASES = {
+# }
+# DATABASES['default'] = dj_database_url.config(conn_max_age = 600, ssl_require=True)
+# DATABASES = {'default': dj_database_url.config(default='postgres://zzid:zzid@localhost:5432/safehome')}
+# DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
