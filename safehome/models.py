@@ -20,7 +20,7 @@ class Region(models.Model):
 
 class Alcohol(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 음주운전 교통사고 발생건수
     accident_num = models.IntegerField(default=0)
     # 사망자수
@@ -33,11 +33,11 @@ class Alcohol(models.Model):
     casual_rate = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Children(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 어린이 교통사고 발생건수
     accident_num = models.IntegerField(default=0)
     # 어린이 교통사고 발생비율
@@ -48,11 +48,11 @@ class Children(models.Model):
     safe_rate = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Crime(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 살인
     murder = models.IntegerField()
     # 강도
@@ -73,21 +73,21 @@ class Crime(models.Model):
     arrest = models.IntegerField()
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Fire_damage(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 재산피해소계
     fire_damage = models.IntegerField(default=0)
 
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Flood(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 이재민
     people = models.IntegerField(default=0)
     # 주택침수세대
@@ -100,20 +100,20 @@ class Flood(models.Model):
     total_cost = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class House(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 평당가
     price = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Population(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 세대수
     household = models.IntegerField(default=0)
     # 남자 total
@@ -136,11 +136,11 @@ class Population(models.Model):
     for_total = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Total(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 인구수
     population = models.IntegerField(default=0)
     # 이재민
@@ -159,11 +159,11 @@ class Total(models.Model):
     house_price = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Total_rate(models.Model):
     # 자치구 이름
-    region_code = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
+    region_info = models.ForeignKey(Region, on_delete=models.CASCADE, default='', primary_key=True)
     # 인구비
     population_rate = models.IntegerField(default=0)
     # 인구수
@@ -196,7 +196,7 @@ class Total_rate(models.Model):
     house_price = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.region_code
+        return self.region_info
 
 class Draw_data(models.Model):
     # 시군구코드

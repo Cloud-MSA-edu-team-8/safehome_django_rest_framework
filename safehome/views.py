@@ -2,13 +2,14 @@ from django.shortcuts import render
 
 from django.shortcuts import render
 from rest_framework import generics
+from django.db.models import Subquery
 
 from .models import Region, Alcohol, Children, Crime, Fire_damage, Flood, House, Population,\
    Total, Total_rate, Draw_data
 from .serializers import RegionSerializer, AlcoholSerializer, ChildrenSerializer, CrimeSerializer, FireDamageSerializer,\
    FloodSerializer, HouseSerializer, PopulationSerializer, TotalSerializer, TotalRateSerializer, DrawdataSerializer
 
-# alcohol
+# Region
 class ListRegion(generics.ListCreateAPIView):
     queryset = Region.objects.all()
     serializer_class = RegionSerializer
@@ -17,7 +18,7 @@ class DetailRegion(generics.RetrieveUpdateDestroyAPIView):
     queryset = Region.objects.all()
     serializer_class = RegionSerializer
 
-# alcohol
+# Alcohol
 class ListAlcohol(generics.ListCreateAPIView):
     queryset = Alcohol.objects.all()
     serializer_class = AlcoholSerializer

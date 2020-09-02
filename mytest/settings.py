@@ -94,17 +94,17 @@ WSGI_APPLICATION = 'mytest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         'CONN_MAX_AGE': 500,
-#         'USER': 'zzid',
-#         'PASSWORD': 'zzid',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'CONN_MAX_AGE': 500,
+        'USER': 'zzid',
+        'PASSWORD': 'zzid',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
 DEBUG = True
 
@@ -117,8 +117,8 @@ DEBUG = True
 #     #      'PORT':'3306', # 데이터베이스 port
 #     # }
 # }
-DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age = 600)
+# DATABASES = {}
+# DATABASES['default'] = dj_database_url.config(conn_max_age = 600)
 # DATABASES = {'default': dj_database_url.config(default='postgres://zzid:zzid@localhost:5432/safehome')}
 # DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 

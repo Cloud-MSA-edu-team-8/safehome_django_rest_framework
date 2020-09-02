@@ -11,9 +11,10 @@ class RegionSerializer(serializers.ModelSerializer):
         model = Region
 
 class AlcoholSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'accident_num',
            'dead_num',
            'casual_num',
@@ -23,9 +24,10 @@ class AlcoholSerializer(serializers.ModelSerializer):
         model = Alcohol
 
 class ChildrenSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'accident_num',
            'accident_rate',
            'safe_num',
@@ -34,9 +36,10 @@ class ChildrenSerializer(serializers.ModelSerializer):
         model = Children
 
 class CrimeSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'murder',
            'robber',
            'rape',
@@ -49,17 +52,19 @@ class CrimeSerializer(serializers.ModelSerializer):
         model = Crime
 
 class FireDamageSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'fire_damage',
        )
         model = Fire_damage
 
 class FloodSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'people',
            'houses',
            'buildings',
@@ -69,17 +74,19 @@ class FloodSerializer(serializers.ModelSerializer):
         model = Flood
 
 class HouseSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'price',
        )
         model = House
 
 class PopulationSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'household',
            'total_male',
            'total_female',
@@ -94,9 +101,10 @@ class PopulationSerializer(serializers.ModelSerializer):
         model = Population
 
 class TotalSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'population',
            'flood_vic',
            'crime_num',
@@ -109,9 +117,10 @@ class TotalSerializer(serializers.ModelSerializer):
         model = Total
 
 class TotalRateSerializer(serializers.ModelSerializer):
+    region_info = RegionSerializer(read_only=True)
     class Meta:
         fields = (
-           'region_code',
+           'region_info',
            'population_rate',
            'population',
            'flood_vic_rate',
