@@ -65,8 +65,6 @@
 
 # 🚗 Process
 
-![TEAM%20%E1%84%8B%E1%85%A7%E1%84%80%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%8D%E1%85%A2%203eba3a80a3fc45eea38ff2d889a156c9/vyvyvy.png](README_img/vyvyvy.png)
-
 ## 1. 프로젝트 기획
 
 ![TEAM%20%E1%84%8B%E1%85%A7%E1%84%80%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%8D%E1%85%A2%203eba3a80a3fc45eea38ff2d889a156c9/Untitled.png](README_img/Untitled.png)
