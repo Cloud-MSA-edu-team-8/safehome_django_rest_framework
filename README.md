@@ -236,12 +236,12 @@
 ![TEAM%20%E1%84%8B%E1%85%A7%E1%84%80%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%8D%E1%85%A2%203eba3a80a3fc45eea38ff2d889a156c9/KakaoTalk_20200902_201415475.png](README_img/KakaoTalk_20200902_201415475.png)
 
 - DB 출처
-화재통계: [https://www.data.go.kr/data/3038724/fileData.do](https://www.data.go.kr/data/3038724/fileData.do)
-어린이 교통사고: [http://data.seoul.go.kr/dataList/570/S/2/datasetView.do](http://data.seoul.go.kr/dataList/570/S/2/datasetView.do)|
-음주운전 사고: [http://data.seoul.go.kr/dataList/10656/S/2/datasetView.do](http://data.seoul.go.kr/dataList/10656/S/2/datasetView.do)
-부동산 가격: [http://data.seoul.go.kr/dataList/OA-15548/S/1/datasetView.do](http://data.seoul.go.kr/dataList/OA-15548/S/1/datasetView.do)
-범죄율 현황: [https://www.data.go.kr/data/15054737/fileData.do](https://www.data.go.kr/data/15054737/fileData.do)
-인구수: [https://data.seoul.go.kr/dataList/419/S/2/datasetView.do](https://data.seoul.go.kr/dataList/419/S/2/datasetView.do)
+1. 화재통계: [https://www.data.go.kr/data/3038724/fileData.do](https://www.data.go.kr/data/3038724/fileData.do)
+2. 어린이 교통사고: [http://data.seoul.go.kr/dataList/570/S/2/datasetView.do](http://data.seoul.go.kr/dataList/570/S/2/datasetView.do)|
+3. 음주운전 사고: [http://data.seoul.go.kr/dataList/10656/S/2/datasetView.do](http://data.seoul.go.kr/dataList/10656/S/2/datasetView.do)
+4. 부동산 가격: [http://data.seoul.go.kr/dataList/OA-15548/S/1/datasetView.do](http://data.seoul.go.kr/dataList/OA-15548/S/1/datasetView.do)
+5. 범죄율 현황: [https://www.data.go.kr/data/15054737/fileData.do](https://www.data.go.kr/data/15054737/fileData.do)
+6. 인구수: [https://data.seoul.go.kr/dataList/419/S/2/datasetView.do](https://data.seoul.go.kr/dataList/419/S/2/datasetView.do)
 
 ![TEAM%20%E1%84%8B%E1%85%A7%E1%84%80%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%8D%E1%85%A2%203eba3a80a3fc45eea38ff2d889a156c9/model.png](README_img/model.png)
 
