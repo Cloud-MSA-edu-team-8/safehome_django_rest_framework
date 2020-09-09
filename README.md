@@ -1,4 +1,4 @@
-# safehome-Django-Rest-Framework
+# safehome-backend
 - [portfoilo](https://github.com/Multicampus-Cloud-MSA-safehome/safehome_Portfolio)
 
 - [deploy link](https://multicampus-cloud-msa-safehome.github.io/safehome_frontend/)
