@@ -1,9 +1,11 @@
 # safehome-Django-Rest-Framework
-[portfoilo](https://github.com/Multicampus-Cloud-MSA-safehome/safehome_Portfolio)
+- [portfoilo](https://github.com/Multicampus-Cloud-MSA-safehome/safehome_Portfolio)
 
-Backend : django rest framework(DRF) 
+- [deploy link]( link : https://multicampus-cloud-msa-safehome.github.io/safehome_frontend/)
 
-[Frontend(other repo)](https://github.com/Cloud-MSA-edu-team-8/Multicampus_Cloud_team_8) : React<br>
+1. Backend : django rest framework(DRF) 
+
+2. [Frontend(other repo)](https://github.com/Cloud-MSA-edu-team-8/Multicampus_Cloud_team_8) : React<br>
 
 # TODO (Created 2020.08.25)
 
