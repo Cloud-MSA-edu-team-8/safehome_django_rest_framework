@@ -1,7 +1,7 @@
 # safehome-Django-Rest-Framework
 - [portfoilo](https://github.com/Multicampus-Cloud-MSA-safehome/safehome_Portfolio)
 
-- [deploy link]( link : https://multicampus-cloud-msa-safehome.github.io/safehome_frontend/)
+- [deploy link](https://multicampus-cloud-msa-safehome.github.io/safehome_frontend/)
 
 1. Backend : django rest framework(DRF) 
 
