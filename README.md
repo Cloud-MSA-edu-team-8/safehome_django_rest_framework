@@ -10,9 +10,9 @@ Backend : django rest framework(DRF)
 [V] Database change -> sqllite3
 [V] Database Normalization
 [V] news web crawling , serializing (for react)
-[ ] login/logout (??)
-[ ] Choosing a news keyword
+[ ] login/logout
+[V] Choosing a news keyword
 [V] Distributing the app to Heroku
 [ ] Heroku db connection problem?
-[ ] News DB auto update
+[V] News DB auto update
 </pre>
